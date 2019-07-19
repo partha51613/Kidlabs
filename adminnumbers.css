@@ -1,0 +1,54 @@
+body {
+    background: url(numbers.jpg);
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+}
+div {
+  padding: 1px 1px;
+  width:40px;
+  margin:0px 50px ;
+}
+
+div.spinner {
+	display:grid;
+	grid-gap:75px;
+	grid-template-columns: auto auto auto auto auto ;
+	font-family: Courier new;
+	font-size: 60px;
+	text-align: center;
+	font-weight: bold;
+	color:white;
+}
+div.spinner >div
+{cursor:pointer;}
+
+@-webkit-keyframes sk-scaleout {
+  0% { -webkit-transform: scale(0) }
+  100% {
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+@keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(1);
+  } 25% {
+    -webkit-transform: scale(0);
+    transform: scale(2);
+    opacity: 10%;
+  }
+    50% {
+    -webkit-transform: scale(0);
+    transform: scale(2);
+	color:red;
+  } 75% {
+    -webkit-transform: scale(0);
+    transform: scale(2);
+    opacity: 10%;
+  } 100% {
+    -webkit-transform: scale(0);
+    transform: scale(1);
+    opacity: 10%;
+}

@@ -1,0 +1,53 @@
+body
+{font-family:Consolas, Andale Mono, Lucida Console, Lucida Sans Typewriter, Monaco, Courier New, monospace;
+background: url(homepage.png) center center fixed; background-size: cover;}
+ p{
+	 font-size:70px;
+  height: 20px;
+  margin: 0px 20px 150px;
+  color:orange;
+}
+
+
+/*{ border: 2px solid black; padding: 25px;  no-repeat center center fixed}*/
+
+.pop-button
+{ background-color:#555; color:white; padding:16px 20px; border:none; cursor:pointer; opacity:0.7; width:300px;}
+
+.form-popup
+ { display:none; position:absolute; left:31%; bottom:1%; border:3px solid #f1f1f1; }
+
+ .form-popup1
+ { display:none; position:absolute; left:39%; border:3px solid #f1f1f1; bottom:25%;}
+
+ .form-container
+{ max-width:500px; padding:10px; background-color:white;}
+
+.form-container input[type=text], .form-container input[type=password], .form-container input[type=email]
+{ width:60%; padding:10px; margin:5px 0 22px 0; display:inline-block; border: none; background: #f1f1f1;}
+
+.form-container input[type=date]
+{ width:55%; padding:8px; margin:5px 0 20px 0; display:inline-block; border: none; background: #f1f1f1;}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus
+{ background-color:#ddd; outline:none;}
+
+.form-container .btn
+{ background-color:#4CAF50; color:white; padding:13px 20px; border:none; cursor:pointer; width:50%; opacity:100%; }
+
+.btn
+{ float:left; width:50%;}
+
+.form-container .cancel
+{ background-color: red;}
+
+.form-container .btn:hover, .pop-button:hover
+{ opacity:1;}
+
+.pop-button:hover {
+background-color: white;
+  font-size:17px;
+text-align:center;
+color:black;
+transition:0.9s;
+}
