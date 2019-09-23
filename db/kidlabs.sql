@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 19, 2019 at 07:51 PM
+-- Generation Time: Jul 20, 2019 at 08:26 AM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 7.1.27
 
@@ -41,9 +41,7 @@ CREATE TABLE `registration` (
 --
 
 INSERT INTO `registration` (`Name`, `BirthDate`, `Contact`, `email`, `password`) VALUES
-('Adadads', '2018-12-03', '4444444444', 'abc@gmail.com', 'Hello@123'),
-('Partha', '1997-02-08', '8486446051', 'partha51613@gmail.com', 'Hello@123'),
-('Etfsghset', '2018-12-06', '99998989889', 'xyz@gmail.com', 'Hello@123');
+('Test user', '1990-01-01', '9999999999', 'testuser@gmail.com', '719855e8f4ebd94341277b0b0d50b75c5187133f');
 
 --
 -- Indexes for dumped tables

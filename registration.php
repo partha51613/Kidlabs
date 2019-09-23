@@ -21,12 +21,14 @@ else {   $pass=$_POST['password']; $c=$c+1;}
 if (empty(ltrim(rtrim($_POST["password1"]))))
 	{  echo 'Password Confirmation Required<br>'; header("refresh:2;url=index.php" ); }
 else {
-		$pass1=$_POST['password1']; if($pass1!=$pass){die('Password Doesnot match'.header("refresh:2;url=index.php" ));} else{ $c=$c+1; }
+		$pass1=$_POST ['password1']; if($pass1!=$pass){die('Password Doesnot match'.header("refresh:2;url=index.php" ));} else{ $c=$c+1; }
 	}
 	$bd=$_POST['bday'];
 if($c==5)
 {
-$q="INSERT INTO registration (Name,BirthDate,Contact,email,password) VALUES ('$name', '$bd', '$cont', '$email', '$pass');";
+$pass_secure = sha1($pass);
+
+$q="INSERT INTO registration (Name,BirthDate,Contact,email,password) VALUES ('$name', '$bd', '$cont', '$email', '$pass_secure');";
 $in=mysqli_query($conn,$q);
 	if(!$in)
 		{ die('Insert Error'.mysqli_error($conn).header("refresh:2;url=index.php" )); }
